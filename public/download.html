@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Shepherd's Tree LMS</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      margin: 0;
+      background-color: #FAF8F5;
+      color: #1A221C;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border: 1px solid #E5E0D8;
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #1A221C;
+    }
+    p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #2E4A3E;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+      border: 1px solid #C59B4B;
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background-color: #1f332a;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Shepherd's Tree Leadership Consulting</h1>
+    <p>Your single-file standalone web application bundle is ready.</p>
+    <a id="download-link" class="btn" href="/shepherds-tree-app.html" download="shepherds-tree-app.html">
+      Click to Download .HTML
+    </a>
+  </div>
+  <script>
+    // Automatically trigger download on page open
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var link = document.getElementById('download-link');
+        if (link) link.click();
+      }, 300);
+    });
+  </script>
+</body>
+</html>
